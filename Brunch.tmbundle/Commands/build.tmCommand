@@ -7,11 +7,8 @@
 	<key>command</key>
 	<string>#!/usr/bin/env ruby
 if File.directory? "#{ENV['TM_PROJECT_DIRECTORY']}/brunch"
-  thr = Thread.new {
-    Dir.chdir "#{ENV['TM_PROJECT_DIRECTORY']}"
-    puts `brunch build` 
-  }
-  thr.join
+  Dir.chdir "#{ENV['TM_PROJECT_DIRECTORY']}"
+  puts `brunch build`
 else
 
 end</string>
