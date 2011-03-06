@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Brunch</string>
+	<key>ordering</key>
+	<array>
+		<string>9738DE75-1DFD-40A9-A939-C5C68B45FEE1</string>
+	</array>
+	<key>uuid</key>
+	<string>F98D99EE-D17C-46D0-8367-31D43E47B57C</string>
+</dict>
+</plist>

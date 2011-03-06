@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>saveActiveFile</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+if File.directory? "#{ENV['TM_PROJECT_DIRECTORY']}/brunch"
+  thr = Thread.new {
+    Dir.chdir "#{ENV['TM_PROJECT_DIRECTORY']}"
+    puts `brunch build` 
+  }
+  thr.join
+else
+
+end</string>
+	<key>input</key>
+	<string>document</string>
+	<key>keyEquivalent</key>
+	<string>@s</string>
+	<key>name</key>
+	<string>build</string>
+	<key>output</key>
+	<string>showAsTooltip</string>
+	<key>uuid</key>
+	<string>9738DE75-1DFD-40A9-A939-C5C68B45FEE1</string>
+</dict>
+</plist>
